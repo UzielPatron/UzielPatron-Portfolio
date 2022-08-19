@@ -1,0 +1,40 @@
+.about-container {
+    max-width: 1100px;
+    padding: 20px 20px 60px 20px;
+    margin: auto;
+}
+
+.about-title {
+    font-size: 3.6rem;
+    display: inline-block;
+    background: linear-gradient(0deg, hsla(49, 100%, 50%, 1) 0%, hsla(320, 70%, 54%, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+
+.about-container p {
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    line-height: 1.6;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .about-title{
+        font-size: 3rem;
+    }
+    
+    .about-container p {
+        font-size: 1.4rem;
+    }
+}

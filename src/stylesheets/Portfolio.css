@@ -1,0 +1,10 @@
+
+
+.sections-background {
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(at 10% 100%, rgb(55, 23, 70) 0%, #090B25 70%, transparent 100%);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}

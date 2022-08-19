@@ -1,0 +1,129 @@
+.projects-container {
+    max-width: 1100px;
+    padding: 20px 20px 0 20px;
+    margin: auto;
+}
+
+.projects-title {
+    font-size: 3.6rem;
+    display: inline-block;
+    background: linear-gradient(0deg, hsla(49, 100%, 50%, 1) 0%, hsla(320, 70%, 54%, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+
+
+.projects-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+
+
+ .project-item-container {
+	margin: 20px;
+	width: 400px;
+	height: 274.44px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	box-shadow: -10px 10px 10px -5px #0005;
+	border-radius: 10px;
+}
+
+.project-item-container a {
+    text-decoration: none;
+}
+
+.project-item-container h4 {
+	font-size: 28px;
+    padding: 5px;
+}
+
+.project-item-container p {
+	font-size: 1.1rem;
+    line-height: 1.2;
+    padding: 7px;
+}
+
+
+.project-item-container img {
+	width: 400px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-item-container img,
+.project-item-container h4,
+.project-item-container p{
+	transition: all .7s;
+}
+
+.project-item-container h4,
+.project-item-container p{
+	position: relative;
+	color: #090B25;
+	z-index: 1;
+	background: #fff9;
+	border-radius: 7px;
+	width: 60%;
+	margin: 15px auto;
+}
+
+.project-item-container:hover h4{
+	transform: translateY(-225px);	
+
+}
+
+.project-item-container:hover p {
+	transform: translateY(-225px);
+}
+
+
+.background-hover {
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	backdrop-filter: blur(5px);
+	left: -550px;
+	top: 200px;
+	border-radius: 50%;
+}
+
+.project-item-container:hover .background-hover{
+	left: -120px;
+	top: -120px;
+	transition: .7s;
+}
+
+@media screen and ( max-width: 500px ){
+	.background-hover{
+		left: -120px;
+		top: -120px;
+	}
+
+	.project-item-container p{
+		transform: translateY(-225px);	
+	}
+
+	.project-item-container h4{
+		transform: translateY(-225px);
+	}
+}
+
+
+@media screen and (max-width: 1000px ) {
+	.projects-title {
+		font-size: 3rem;
+		
+	}
+	
+}
