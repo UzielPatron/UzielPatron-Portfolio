@@ -7,6 +7,8 @@ import illustrator from '../resources/illustrator.png';
 import photoshop from '../resources/photoshop.png';
 import reactNative from '../resources/react-native.png';
 import node from '../resources/node.png';
+import git from '../resources/git.png';
+import typescript from '../resources/typescript.png';
 import '../stylesheets/Technologies.css';
 
 export const Technologies = () => {
@@ -21,6 +23,7 @@ export const Technologies = () => {
                 <TechnologiesItem img={ html } name='Html' />
                 <TechnologiesItem img={ css } name='Css' />
                 <TechnologiesItem img={ javascript } name='JavaScript' />
+                <TechnologiesItem img={ typescript } name='TypeScript' />
                 <TechnologiesItem img={ react } name='React' />
                 <TechnologiesItem img={ reactNative } name='React Native' />
             </div>
@@ -29,6 +32,7 @@ export const Technologies = () => {
             <div className="technologies-items-container">
                 <TechnologiesItem img={ illustrator } name='Illustrator' />
                 <TechnologiesItem img={ photoshop } name='Photoshop' />
+                <TechnologiesItem img={ git } name='Git' />
                 <TechnologiesItem img={ node } name='Node.js' />
             </div>
         </div>
