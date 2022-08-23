@@ -24,20 +24,21 @@ export const Home = () => {
                 <div className='home-divider-text'>
                     <div className="home-divider-text-blur">
                         <h1 className='home-title'>Bienvenido a mi portafolio</h1>
-                        <p className='home-p'>Mi nombre es Uziel Patron, soy <b>Desarrollador Frontend con React.js</b>. Me considero una persona proactiva y en constante búsqueda de nuevos retos que afrontar.</p>
+                        <p className='home-p desktop'>Mi nombre es Uziel Patron, soy <b>Desarrollador Frontend con React.js</b>. Me considero una persona proactiva y en constante búsqueda de nuevos retos que afrontar.</p>
+                        <p className='home-p mobile'>Me llamo Uziel Patron, soy <b>Desarrollador Frontend con React.js</b></p>
                     </div>
                     <div className="home-contact-links">
-                        <a href="mailto:uzielpatron2020@gmail.com?Subject=Quisiera%20ponerme%20en%20contacto%20contigo" target='_BLANK' >
+                        <a className='button' href="mailto:uzielpatron2020@gmail.com?Subject=Quisiera%20ponerme%20en%20contacto%20contigo" target='_BLANK' >
                             <button className='home-contact-button'>Contactame<img src={ iconNext }/><img src={ iconNext }/><img src={ iconNext }/></button>
                         </a>
                     
-                        <a href="https://www.linkedin.com/in/uziel-patron-50a474227/" target="_BLANK">
+                        <a className='icon-1'href="https://www.linkedin.com/in/uziel-patron-50a474227/" target="_BLANK">
                             <FiLinkedin className='linkedin-icon home-icons' />
                         </a>
-                        <a href="https://api.whatsapp.com/send?phone=542473519714" target='_BLANK' >
+                        <a className='icon-2'href="https://api.whatsapp.com/send?phone=542473519714" target='_BLANK' >
                             <BsWhatsapp className='whatsapp-icon home-icons'/>
                         </a>
-                        <a href="mailto:uzielpatron2020@gmail.com?Subject=Quisiera%20ponerme%20en%20contacto%20contigo" target='_BLANK' >
+                        <a className='icon-3'href="mailto:uzielpatron2020@gmail.com?Subject=Quisiera%20ponerme%20en%20contacto%20contigo" target='_BLANK' >
                             <HiMail className='email-icon home-icons' />
                         </a>
                     </div>

@@ -77,6 +77,10 @@
     user-select: none;
 }
 
+.mobile{
+    display: none;
+}
+
 
 
 .home-contact-links{
@@ -279,70 +283,100 @@
 
 
 
-@media screen and ( max-width: 1000px) {
-
-    .home-container{
-        flex-direction: column-reverse;
-        height: 93%;
-        margin: 0 20px 0 20px;
+@media screen and ( max-width: 405px ) {
+    .navbar-title{
+        font-size: 28px !important;
+        min-width: auto !important;
+        padding: 10px 0 !important;
+        margin: 0 !important;
     }
     
-    .home-divider-text{
-        max-width: 100%;
-        width: 100%;
-        height: 43%;
-        justify-content: flex-start;
-    }
-
-    .home-divider-text-blur{
-        max-width: 600px;
-        padding: 0;
-    }
-
-    
-
-    .home-divider-photo  {
-        width: 100%;
-        height: 57%;
-        display: flex;
-        justify-content: center;
+    .home-contact-button{
         margin: 0;
-        padding-top: 65px;
+        padding: 9px 10px;
     }
 
+    .home-icons{
+        margin: 3px;
+    }
 
-
-    
-    .home-title {
-        font-size: 3.3rem;
-        margin-bottom: 20px;
-        margin-top: 10px;
+    .home-divider-text {
+        margin: 0;
     }
     
-    .home-p {
+    .desktop{
+        display: none
+    }
+
+    .mobile{
+        display: block;
         font-size: 1.2rem;
-        line-height: 2rem;
     }
 
     .home-contact-links{
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(2, auto);
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
     }
 
-    .home-photo{
-        height: 80%;
+    .button{
+        grid-row: 1/2;
+        grid-column: 1/6;
+        width: 100%;
+        /* margin-bottom: 15px; */
+    }
+    .button > button {
+        width: 100%;
+        justify-content: center;
     }
 
-    
+    .icon-1{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .icon-2{
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+
+    .icon-3{
+        grid-row: 2/3;
+        grid-column: 4/5;
+    }
+
+    .technologies-title {
+        font-size: 2.5rem !important;
+        margin: 40px 0 30px 0 !important;
+    }
+
+    .technologies-p {
+        font-size: 1.3rem !important;
+    }
+
+    .technologies-subtitle{
+        margin: 50px 0 10px 0 !important;
+    }
+
 }
 
 
 
+
+
 @media screen and ( max-width: 500px ) {
-    .icon-bottom {
-        display: none;
+    
+    .project-item-container > a > h4{
+        font-size: 24px;
+        width: 80%
+    }
+
+    .project-item-container > a > p {
+        font-size: 16px;
+        width: 80%;
     }
 
     .home-container{
@@ -354,17 +388,13 @@
     }
 
     .home-divider-photo  {
-        height: 45%;
+        height: 40vh;
         justify-content: center;
         margin: 0;
-        padding: 65px 0 0 0;
+        padding: 0;
     }
 
     .home-photo {
-        height: 100%;
-        width: auto;
-        max-height: auto;
-        max-width: 100%;
         padding: 0;
         margin: 0;
     }
@@ -383,17 +413,139 @@
 }
 
 
-@media screen and ( max-width: 405px ) {
-    .home-contact-button{
-        margin: 0;
-        padding: 9px 10px;
+@media screen and ( max-width: 768px) {
+
+    .home-container{
+        flex-direction: column-reverse;
+        height: 93%;
+        margin: 0 20px 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .home-divider-text{
+        max-width: 100%;
+        width: 100%;
+        height: 43%;
+        justify-content: flex-start;
     }
 
-    .home-icons{
-        margin: 3px;
+    .home-divider-text-blur{
+        max-width: 600px;
+        padding: 0;
     }
 
-    .home-divider-text {
+    
+
+    .home-divider-photo  {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
         margin: 0;
+        padding: 0;
+    }
+
+    .home-photo{
+        min-height: 40vh;
+        min-width: calc(40vh * 0.7352);
+        max-width: 98vw;
+    }
+
+    
+    .home-title {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .home-p {
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .home-contact-links{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .home-contact-links > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-photo{
+        height: 80%;
+    }
+
+    .icon-bottom {
+        display: none;
+    }   
+}
+
+@media screen and (max-width: 315px) {
+    .navbar-title{
+        font-size: 28px !important;
+        min-width: auto !important;
+        padding: 10px 0 !important;
+        margin: 0 !important;
+    }
+
+    .technologies-items-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .technology-item-container{
+        max-width: 90px !important;
+        margin: 0 !important;
+        padding: 10px 0 !important;
+    }
+
+    .project-item-container > a > h4{
+        font-size: 22px !important;
+        width: 90% !important;
+    }
+
+    .project-item-container > a > p {
+        font-size: 15px !important;
+        width: 90% !important;
+    }
+
+    .projects-title{
+        font-size: 2.5rem !important;
+    }
+
+    .technologies-container{
+        padding: 20px 10px !important;
+    }
+
+    .projects-container{
+        padding: 20px 10px !important;
+    }
+
+    .about-container{
+        padding: 20px 10px !important;
+    }
+
+    .home-container{
+        margin: 0 5px !important;
+        overflow-x: hidden;
+    }
+
+    .home-divider-photo{
+        max-width: 95vw !important;
+        width: 95vw !important;
+    }
+
+    .home-divider-photo > img {
+        max-height: 250px !important;
+        max-width: 100px !important;
     }
 }
