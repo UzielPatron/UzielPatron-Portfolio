@@ -9,6 +9,7 @@ import reactNative from '../resources/react-native.png';
 import node from '../resources/node.png';
 import git from '../resources/git.png';
 import typescript from '../resources/typescript.png';
+import MongoDB from '../resources/MongoDB.png'
 import '../stylesheets/Technologies.css';
 
 export const Technologies = () => {
@@ -26,14 +27,15 @@ export const Technologies = () => {
                 <TechnologiesItem img={ typescript } name='TypeScript' />
                 <TechnologiesItem img={ react } name='React' />
                 <TechnologiesItem img={ reactNative } name='React Native' />
+                <TechnologiesItem img={ node } name='Node.js' />
             </div>
 
             <h3 className="technologies-subtitle">Otros conocimientos</h3>
             <div className="technologies-items-container">
+                <TechnologiesItem img={ git } name='Git' />
+                <TechnologiesItem img={ MongoDB } name='MongoDB' />
                 <TechnologiesItem img={ illustrator } name='Illustrator' />
                 <TechnologiesItem img={ photoshop } name='Photoshop' />
-                <TechnologiesItem img={ git } name='Git' />
-                <TechnologiesItem img={ node } name='Node.js' />
             </div>
         </div>
     )
